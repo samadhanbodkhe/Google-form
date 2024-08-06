@@ -12,7 +12,7 @@ app.use(express.static("dist"))
 app.use(express.json())
 
 app.use(express.urlencoded({ extended: true }))
-app.use(cors({ origin: "*", credentials: true }))
+app.use(cors({ origin: "https://google-form-u5pq.onrender.com", credentials: true }))
 app.use(cookieParser())
 
 app.use("/api/google-auth", require("./routes/authRoute"))
